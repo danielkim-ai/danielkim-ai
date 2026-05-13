@@ -4,38 +4,56 @@
 
 <h1 align="center">ARCHITECTING RELIABLE INTELLIGENCE THROUGH BAYESIAN FOUNDATIONS</h1>
 <h3 align="center">Navigating the nexus of sequential decision-making and statistical rigour</h3>
+<p align="center"><strong>Yonsei University | CS & Applied Statistics</strong></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/R_Language-276DC3?style=flat-square&logo=r&logoColor=white" alt="R" />
+  <img src="https://img.shields.io/badge/SQLD-4A4A4A?style=flat-square" alt="SQLD" />
+  <img src="https://img.shields.io/badge/ADsP-4A4A4A?style=flat-square" alt="ADsP" />
+</p>
 
 ---
 
-## 🔬 Research Interests
+## 🏆 Academic Honours & Leadership
 
-My academic pursuit lies at the intersection of rigorous statistical inference and high-performance machine learning. I am dedicated to interrogating the structural guarantees of intelligent systems.
+**Yonsei Artificial Intelligence (YAI) Club**
+* **Best Academic Group Award (Mar 2026):** Spearheaded collective research as a Tutor, orchestrating multidisciplinary collaboration that elevated the team's rigorous theoretical investigations to top-tier recognition. 
+* **Best Academic Member (Jan 2023):** Recognised for individual excellence and outstanding contributions to deep learning seminars and rigorous academic presentations. 
+* *[YAI Official Notion](https://y-ai.notion.site/)*
+
+**Samsung AI Challenge:** Recognised as an Award Nominee, demonstrating robust capabilities in applied machine learning algorithms.
+
+---
+
+## 🔬 Core Research Interests
+
+My academic trajectory is anchored in interrogating the structural guarantees of intelligent systems.
 
 ### Bayesian Reinforcement Learning
 **Sample efficiency via uncertainty estimation & Variational inference.**
 
-Interrogating the convergence of Bayesian statistics and reinforcement learning to maximise sample efficiency within high-dimensional state spaces. By transitioning beyond conventional point estimation, I am investigating the structural guarantees of uncertainty estimation. This entails leveraging variational inference for robust posterior approximation and quantifying epistemic uncertainty within a Variational Actor-Critic framework.
+Interrogating the convergence of Bayesian statistics and reinforcement learning to maximise sample efficiency. This entails leveraging variational inference for robust posterior approximation and quantifying epistemic uncertainty.
 
 ### Privacy-Preserving Offline RL
 **Differential privacy guarantees & Machine unlearning in sequential decision-making.**
 
-Exploring the structural guarantees of $(\epsilon, \delta)$-Differential Privacy within offline reinforcement learning, particularly concerning sensitive medical and financial logs. Rather than relying on naive noise injection, the objective is to architect utility-optimised mechanisms that negotiate the privacy-utility trade-off via precise optimisation under constraints. This encompasses integrating machine unlearning for efficient policy updates and ensuring robust policy evaluation under stringent privacy boundaries.
+Exploring the structural guarantees of $(\epsilon, \delta)$-Differential Privacy within offline reinforcement learning. The objective is to architect utility-optimised mechanisms that negotiate the privacy-utility trade-off via precise optimisation.
 
 ---
 
-## 🎯 Current Focus
+## 💻 Project Showcase
 
-Rather than mere implementation, my current focus is directed towards interrogating fundamental academic questions:
+### Applied Research / Industrial Collaboration
+* **LLM-as-a-judge Capstone ([Episod](https://episod.ink/)):** Orchestrated an applied research initiative utilising Gemini 2.5 to design a robust evaluation framework for a live commercial service. Conducted rigorous evaluation across 110 meticulously engineered test cases. *(Industrial purpose private repository)*
 
-* **Uncertainty Quantification:** How can we construct tight bounds on epistemic uncertainty to prevent catastrophic degradation in out-of-distribution state spaces?
-* **Utility-Optimised Privacy:** To what extent can we integrate $(\epsilon, \delta)$-Differential Privacy into offline policy evaluation without compromising the convergence properties of the target policy?
-* **Algorithmic Unlearning:** What are the theoretical prerequisites for provable machine unlearning in sequential decision-making paradigms, ensuring minimal computational overhead whilst maintaining model integrity and predictable behaviour?
+### Technical Proficiencies
+* **Continuous Control (SAC, MuJoCo):** Engineered complex reinforcement learning agents, proving technical mastery in navigating continuous state-action spaces.
+* **Real-time Object Detection (YOLOX, DeepSORT):** Implemented high-performance computer vision pipelines, establishing a robust foundation in deep neural architectures.
 
 ---
 
 ## 📬 Contact Information
-
-I welcome discourse with fellow researchers and practitioners regarding potential collaborations or theoretical discussions.
 
 * **Email**: [coderpoirot@gmail.com](mailto:coderpoirot@gmail.com) / [daniel1kim@yonsei.ac.kr](mailto:daniel1kim@yonsei.ac.kr)
 * **LinkedIn**: [danielkim-ai](https://www.linkedin.com/in/danielkim-ai/)
