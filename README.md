@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://danielkim-ai.vercel.app/assets/symbolic-diagram.svg" width="350" alt="Stats-CS-RL Symbolic Diagram" />
+  <img src="https://raw.githubusercontent.com/danielkim-ai/portfolio-2026/main/public/assets/symbolic-diagram.svg" width="350" alt="Stats-CS-RL Symbolic Diagram" />
 </p>
 
 <h1 align="center">ARCHITECTING RELIABLE INTELLIGENCE THROUGH BAYESIAN FOUNDATIONS</h1>
