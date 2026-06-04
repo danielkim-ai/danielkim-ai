@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://raw.githubusercontent.com/danielkim-ai/portfolio-2026/main/public/assets/symbolic-diagram.svg" width="350" alt="Stats-CS-RL Symbolic Diagram" />
 </p>
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 🏆 Academic Honours &amp; Leadership
+## ?룇 Academic Honours &amp; Leadership
 
 **Yonsei Artificial Intelligence (YAI) Club**
 * **Best Academic Group Award (Mar 2026):** Spearheaded collective research as a Tutor, orchestrating multidisciplinary collaboration that elevated the team's rigorous theoretical investigations to top-tier recognition.
@@ -26,18 +26,17 @@
 
 ---
 
-## 🔬 Core Research Interests
+## ?뵮 Core Research Interests
 
 My academic trajectory is anchored in interrogating the structural guarantees of intelligent systems at the intersection of **Statistics (Theory)**, **Reinforcement Learning (Domain)**, and **Computer Science (Systems)**.
 
 ```
           Stats (Theory)
-               ▲
-              / \
+               ??              / \
              /   \
             /     \
            /       \
-          /─────────\
+          /?????????\
    RL (Domain)   CS (Systems)
 ```
 
@@ -49,11 +48,11 @@ Interrogating the convergence of Bayesian statistics and reinforcement learning 
 ### Privacy-Preserving Offline RL
 **Differential privacy guarantees &amp; Machine unlearning in sequential decision-making.**
 
-Exploring the structural guarantees of $(\epsilon, \delta)$-Differential Privacy within offline reinforcement learning, particularly concerning sensitive medical and financial logs. Rather than relying on naive noise injection, the objective is to architect utility-optimised mechanisms that negotiate the privacy-utility trade-off via precise optimisation under constraints. This encompasses integrating machine unlearning for efficient policy updates and ensuring robust policy evaluation under stringent privacy boundaries.
+Establishing the structural guarantees of $(\epsilon, \delta)$-Differential Privacy within offline reinforcement learning, particularly concerning sensitive medical and financial logs. Rather than relying on naive noise injection, this work implements utility-optimised mechanisms that negotiate the privacy-utility trade-off via precise optimisation under constraints, including machine unlearning for efficient policy updates and robust policy evaluation under stringent privacy boundaries.
 
 ---
 
-## 🗂️ Global Hub
+## ?뾺截?Global Hub
 
 - [Portfolio](https://github.com/danielkim-ai/portfolio-2026): website, research profile, and public technical materials.
 - [Projects](https://github.com/danielkim-ai/projects): implementation archive for reinforcement learning and trustworthy ML experiments.
@@ -61,9 +60,9 @@ Exploring the structural guarantees of $(\epsilon, \delta)$-Differential Privacy
 
 ---
 
-## 📋 Research Project Log
+## ?뱥 Research Project Log
 
-### ✅ Stability of Bayesian-SAC under Non-Stationary Reward Scaling
+### ??Stability of Bayesian-SAC under Non-Stationary Reward Scaling
 
 > **Status:** Completed | **Repo:** [`projects/policy-learning-stability`](https://github.com/danielkim-ai/projects/tree/main/policy-learning-stability)
 
@@ -76,35 +75,44 @@ Studies whether entropy-regularised continuous-control policies remain stable wh
 
 ---
 
-### ✅ Bayesian RL Meets MCMC (Phase 1–4 Complete)
+### ??Bayesian RL Meets MCMC (Phase 1?? Complete)
 
 > **Status:** All phases complete | **Repo:** [`projects/bayesian-rl-meets-mcmc`](https://github.com/danielkim-ai/projects/tree/main/bayesian-rl-meets-mcmc)
 
 A completed four-phase programme for posterior-aware reinforcement learning under data scarcity, validated on HalfCheetah-v4, Ant-v4, Hopper-v4, and Humanoid-v4.
 
 **Phase Breakdown:**
-- **Phase 1 — Foundations:** Low-data diagnostic infrastructure, Variational Actor-Critic baselines, SGLD building blocks, and report-facing calibration, regret, effective sample size, and PAC-Bayes metrics.
-- **Phase 2 — MuJoCo Validation:** Stability analysis for continuous-control benchmarks, including regret-oriented comparison against brittle point-estimated exploration. Demonstrated sub-linear Bayesian regret $\tilde{O}(\sqrt{dT})$ vs. frequentist $O(T)$.
-- **Phase 3 — MCMC Posterior Analysis:** SGLD posterior traces over policy and selected RL hyperparameters across all four MuJoCo environments. Hyperparameter posterior estimation and comprehensive calibration analysis.
-- **Phase 4 — Differential Privacy Integration:** Clipped/noisy training hooks, epsilon sensitivity studies, privacy-budget plots, and final posterior/performance artefacts. Completes the full privacy-preserving Bayesian RL pipeline.
+- **Phase 1 ??Foundations:** Low-data diagnostic infrastructure, Variational Actor-Critic baselines, SGLD building blocks, and report-facing calibration, regret, effective sample size, and PAC-Bayes metrics.
+- **Phase 2 ??MuJoCo Validation:** Stability analysis for continuous-control benchmarks, including regret-oriented comparison against brittle point-estimated exploration. Demonstrated sub-linear Bayesian regret $\tilde{O}(\sqrt{dT})$ vs. frequentist $O(T)$.
+- **Phase 3 ??MCMC Posterior Analysis:** SGLD posterior traces over policy and selected RL hyperparameters across all four MuJoCo environments. Hyperparameter posterior estimation and comprehensive calibration analysis.
+- **Phase 4 ??Differential Privacy Integration:** Clipped/noisy training hooks, epsilon sensitivity studies, privacy-budget plots, and final posterior/performance artefacts. Completes the full privacy-preserving Bayesian RL pipeline.
 
 ---
 
-### 🔄 Trustworthy Offline RL via DP &amp; Machine Unlearning (In Progress)
+### Trustworthy Offline RL via DP &amp; Machine Unlearning (Completed)
 
-> **Status:** In Progress | **Repo:** [`projects/trustworthy-offline-rl-via-dp`](https://github.com/danielkim-ai/projects/tree/main/trustworthy-offline-rl-via-dp)
+> **Status:** Completed | **Repo:** [`projects/trustworthy-offline-rl-via-dp`](https://github.com/danielkim-ai/projects/tree/main/trustworthy-offline-rl-via-dp)
 
-Designed around offline trajectories that may encode sensitive healthcare, finance, or longitudinal user records. The framework combines $(\varepsilon, \delta)$-DP with trajectory-level adjacency so clipping and privacy accounting protect an episode-level unit rather than treating correlated transitions as unrelated records.
+This completed project establishes a multi-domain framework integrating trajectory-level Differential Privacy $(\varepsilon \approx 2.74)$ and Implicit Q-Learning (IQL) to guarantee secure sequence optimisation without the out-of-distribution value-collapse typical of CQL under heavy gradient noise.
 
-**Research Directions:**
-- Utility-optimised $(\varepsilon, \delta)$-DP mechanisms for offline policy evaluation without compromising convergence.
-- Influence function-based machine unlearning: deletion requests trigger approximate inverse-Hessian corrections for removed trajectories.
-- Sharded retraining and audit signals for later certification and provable unlearning guarantees.
-- Theoretical prerequisites for provable machine unlearning in sequential decision-making paradigms.
+The implementation demonstrates deterministic seed-based execution and high-fidelity domain proxies for MIMIC-III sepsis treatment and FinRL trading. This architecture audits privacy leakage risk and decision-making loss transparently, separating the effect of DP noise from uncontrolled database access or irreproducible sampling.
+
+**Core Contributions:**
+- Implements trajectory-level DP-SGD with episode-wise clipping and RDP-compatible privacy accounting.
+- Implements LiSSA influence-function unlearning and SISA shard identification for deletion requests.
+- Introduces `PrivacyAwareIQL`, reducing DP-induced gradient variance by relying on in-sample expectile regression rather than OOD action sampling.
+- Supports MIMIC-III-style ICU trajectories and FinRL-style trading trajectories through a shared `EpisodeBatch` abstraction.
+
+**Featured Cross-Domain Plots:**
+
+| Medical Domain (MIMIC-III Sepsis Proxy) | Financial Domain (FinRL Trading Proxy) |
+| --- | --- |
+| ![Medical MIA Margin](https://raw.githubusercontent.com/danielkim-ai/projects/main/trustworthy-offline-rl-via-dp/results/plots/plot_unlearning_margin_medical_iql.png) | ![Financial Utility Trade-off](https://raw.githubusercontent.com/danielkim-ai/projects/main/trustworthy-offline-rl-via-dp/results/plots/plot_utility_tradeoff_financial_iql.png) |
+| MIA distribution collapse indicating strong membership indistinguishability $(\varepsilon \approx 2.74)$. | In-sample expectile regression showing tight utility-gap containment $(\Delta J \approx 0.98)$ under private perturbations. |
 
 ---
 
-### 🎓 Capstone Project — Optimising Contextual Sentence Prediction Models for AI-Assisted Authoring Tools ([Episod](https://episod.ink/))
+### ?럳 Capstone Project ??Optimising Contextual Sentence Prediction Models for AI-Assisted Authoring Tools ([Episod](https://episod.ink/))
 
 > **Status:** Completed | **Role:** Evaluation Model Team Member (2 of 4) | **Repo:** Private industrial repository; code not publicly available due to intellectual property constraints.
 
@@ -116,11 +124,11 @@ A university capstone initiative conducted in collaboration with [Episod](https:
 - Generated and analysed **110 empirical test cases** (20 per book across 11 books) to validate model consistency, identify scoring sensitivity thresholds, and surface systematic failure modes.
 - Collaborated on improving **prompt efficiency** and developing structured feedback extraction mechanisms to support continuous refinement of the deployed prediction system.
 
-> 🔒 **Intellectual Property Notice:** The source code, internal evaluation benchmarks, and proprietary datasets associated with this engagement are not publicly available. All implementation details remain within a private industrial repository in accordance with intellectual property constraints.
+> ?뵏 **Intellectual Property Notice:** The source code, internal evaluation benchmarks, and proprietary datasets associated with this engagement are not publicly available. All implementation details remain within a private industrial repository in accordance with intellectual property constraints.
 
 ---
 
-## 🎯 Current Focus
+## ?렞 Current Focus
 
 Rather than mere implementation, my current focus is directed towards interrogating fundamental academic questions:
 
@@ -130,7 +138,7 @@ Rather than mere implementation, my current focus is directed towards interrogat
 
 ---
 
-## 📬 Contact Information
+## ?벉 Contact Information
 
 I welcome discourse with fellow researchers and practitioners regarding potential collaborations or theoretical discussions.
 
@@ -143,3 +151,4 @@ I welcome discourse with fellow researchers and practitioners regarding potentia
 <p align="center">
   <small><em>"The ultimate prerogative of choice must remain anchored in human agency, ensuring accountability within the algorithmic framework."</em></small>
 </p>
+
