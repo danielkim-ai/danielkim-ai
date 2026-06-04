@@ -93,20 +93,13 @@ A completed four-phase programme for posterior-aware reinforcement learning unde
 
 This completed project establishes a multi-domain framework integrating trajectory-level Differential Privacy $(\varepsilon \approx 2.74)$ and Implicit Q-Learning (IQL) to guarantee secure sequence optimisation without the out-of-distribution value-collapse typical of CQL under heavy gradient noise.
 
-The implementation demonstrates deterministic seed-based execution and high-fidelity domain proxies for MIMIC-III sepsis treatment and FinRL trading. This architecture audits privacy leakage risk and decision-making loss transparently, separating the effect of DP noise from uncontrolled database access or irreproducible sampling.
+The implementation demonstrates successful cross-domain deployment across MIMIC-III sepsis-treatment proxies and FinRL trading proxies. Medical ICU trajectories and financial asset histories are both represented through a shared `EpisodeBatch` abstraction, allowing patient-level and asset-level sequences to be audited under the same privacy, unlearning, and utility-evaluation contract.
 
 **Core Contributions:**
 - Implements trajectory-level DP-SGD with episode-wise clipping and RDP-compatible privacy accounting.
 - Implements LiSSA influence-function unlearning and SISA shard identification for deletion requests.
 - Introduces `PrivacyAwareIQL`, reducing DP-induced gradient variance by relying on in-sample expectile regression rather than OOD action sampling.
-- Supports MIMIC-III-style ICU trajectories and FinRL-style trading trajectories through a shared `EpisodeBatch` abstraction.
-
-**Featured Cross-Domain Plots:**
-
-| Medical Domain (MIMIC-III Sepsis Proxy) | Financial Domain (FinRL Trading Proxy) |
-| --- | --- |
-| ![Medical MIA Margin](https://raw.githubusercontent.com/danielkim-ai/projects/main/trustworthy-offline-rl-via-dp/results/plots/plot_unlearning_margin_medical_iql.png) | ![Financial Utility Trade-off](https://raw.githubusercontent.com/danielkim-ai/projects/main/trustworthy-offline-rl-via-dp/results/plots/plot_utility_tradeoff_financial_iql.png) |
-| MIA distribution collapse indicating strong membership indistinguishability $(\varepsilon \approx 2.74)$. | In-sample expectile regression showing tight utility-gap containment $(\Delta J \approx 0.98)$ under private perturbations. |
+- Demonstrates robust cross-domain deployment for MIMIC-III-style ICU trajectories and FinRL-style trading trajectories without cluttering the overview with implementation plots.
 
 ---
 
@@ -128,11 +121,11 @@ A university capstone initiative conducted in collaboration with [Episod](https:
 
 ## Current Focus
 
-Rather than mere implementation, my current focus is directed towards interrogating fundamental academic questions:
+My current research agenda is centred on **Bayesian Reinforcement Learning** as the primary vehicle for statistically robust sequential decision-making. The broader safety and privacy layer is treated as a set of deployment constraints: it matters because robust RL systems must remain calibrated, auditable, and useful when they leave controlled benchmarks and enter data-scarce, regulated environments.
 
-* **Uncertainty Quantification:** How can we construct tight bounds on epistemic uncertainty to prevent catastrophic degradation in out-of-distribution state spaces?
-* **Utility-Optimised Privacy:** To what extent can we integrate $(\epsilon, \delta)$-Differential Privacy into offline policy evaluation without compromising the convergence properties of the target policy?
-* **Algorithmic Unlearning:** What are the theoretical prerequisites for provable machine unlearning in sequential decision-making paradigms, ensuring minimal computational overhead whilst maintaining model integrity and predictable behaviour?
+* **Bayesian Reinforcement Learning and Statistical Robustness:** How can posterior inference, SGLD, variational approximation, and regret-aware exploration make RL policies more sample-efficient and less brittle under non-stationary evidence?
+* **Uncertainty Quantification:** How can mathematical statistics provide tight epistemic-uncertainty estimates that prevent catastrophic degradation in out-of-distribution state spaces?
+* **Privacy and Unlearning as Deployment Constraints:** How can $(\epsilon, \delta)$-Differential Privacy and machine unlearning be integrated as constraints on offline RL without eroding convergence, calibration, or policy utility?
 
 ---
 
