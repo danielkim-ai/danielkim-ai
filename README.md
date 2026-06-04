@@ -15,7 +15,7 @@
 
 ---
 
-## ?룇 Academic Honours &amp; Leadership
+## Academic Honours &amp; Leadership
 
 **Yonsei Artificial Intelligence (YAI) Club**
 * **Best Academic Group Award (Mar 2026):** Spearheaded collective research as a Tutor, orchestrating multidisciplinary collaboration that elevated the team's rigorous theoretical investigations to top-tier recognition.
@@ -26,17 +26,15 @@
 
 ---
 
-## ?뵮 Core Research Interests
+## Core Research Interests
 
 My academic trajectory is anchored in interrogating the structural guarantees of intelligent systems at the intersection of **Statistics (Theory)**, **Reinforcement Learning (Domain)**, and **Computer Science (Systems)**.
 
 ```
           Stats (Theory)
-               ??              / \
-             /   \
-            /     \
-           /       \
-          /?????????\
+             /       \
+            /         \
+           /           \
    RL (Domain)   CS (Systems)
 ```
 
@@ -52,7 +50,7 @@ Establishing the structural guarantees of $(\epsilon, \delta)$-Differential Priv
 
 ---
 
-## ?뾺截?Global Hub
+## Global Hub
 
 - [Portfolio](https://github.com/danielkim-ai/portfolio-2026): website, research profile, and public technical materials.
 - [Projects](https://github.com/danielkim-ai/projects): implementation archive for reinforcement learning and trustworthy ML experiments.
