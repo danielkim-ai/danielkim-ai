@@ -28,14 +28,14 @@
 
 ## Core Research Interests
 
-My academic trajectory is anchored in interrogating the structural guarantees of intelligent systems at the intersection of **Statistics (Theory)**, **Reinforcement Learning (Domain)**, and **Computer Science (Systems)**.
+My academic trajectory is anchored in interrogating the structural guarantees of intelligent systems at the intersection of **Statistics (Theory)**, **Computer Science (Systems)**, and **Reinforcement Learning (Domain)**.
 
 ```
-          Stats (Theory)
-             /       \
-            /         \
-           /           \
-   RL (Domain)   CS (Systems)
+         Stats (Theory)
+              /   \
+             /     \
+            /       \
+    CS (Systems)   RL (Domain)
 ```
 
 ### Bayesian Reinforcement Learning
@@ -58,9 +58,9 @@ Establishing the structural guarantees of $(\epsilon, \delta)$-Differential Priv
 
 ---
 
-## ?뱥 Research Project Log
+## Research Project Log
 
-### ??Stability of Bayesian-SAC under Non-Stationary Reward Scaling
+### Stability of Bayesian-SAC under Non-Stationary Reward Scaling
 
 > **Status:** Completed | **Repo:** [`projects/policy-learning-stability`](https://github.com/danielkim-ai/projects/tree/main/policy-learning-stability)
 
@@ -73,17 +73,17 @@ Studies whether entropy-regularised continuous-control policies remain stable wh
 
 ---
 
-### ??Bayesian RL Meets MCMC (Phase 1?? Complete)
+### Bayesian RL Meets MCMC (All Phases Complete)
 
 > **Status:** All phases complete | **Repo:** [`projects/bayesian-rl-meets-mcmc`](https://github.com/danielkim-ai/projects/tree/main/bayesian-rl-meets-mcmc)
 
 A completed four-phase programme for posterior-aware reinforcement learning under data scarcity, validated on HalfCheetah-v4, Ant-v4, Hopper-v4, and Humanoid-v4.
 
 **Phase Breakdown:**
-- **Phase 1 ??Foundations:** Low-data diagnostic infrastructure, Variational Actor-Critic baselines, SGLD building blocks, and report-facing calibration, regret, effective sample size, and PAC-Bayes metrics.
-- **Phase 2 ??MuJoCo Validation:** Stability analysis for continuous-control benchmarks, including regret-oriented comparison against brittle point-estimated exploration. Demonstrated sub-linear Bayesian regret $\tilde{O}(\sqrt{dT})$ vs. frequentist $O(T)$.
-- **Phase 3 ??MCMC Posterior Analysis:** SGLD posterior traces over policy and selected RL hyperparameters across all four MuJoCo environments. Hyperparameter posterior estimation and comprehensive calibration analysis.
-- **Phase 4 ??Differential Privacy Integration:** Clipped/noisy training hooks, epsilon sensitivity studies, privacy-budget plots, and final posterior/performance artefacts. Completes the full privacy-preserving Bayesian RL pipeline.
+- **Phase 1: Foundations:** Low-data diagnostic infrastructure, Variational Actor-Critic baselines, SGLD building blocks, and report-facing calibration, regret, effective sample size, and PAC-Bayes metrics.
+- **Phase 2: MuJoCo Validation:** Stability analysis for continuous-control benchmarks, including regret-oriented comparison against brittle point-estimated exploration. Demonstrated sub-linear Bayesian regret $\tilde{O}(\sqrt{dT})$ vs. frequentist $O(T)$.
+- **Phase 3: MCMC Posterior Analysis:** SGLD posterior traces over policy and selected RL hyperparameters across all four MuJoCo environments. Hyperparameter posterior estimation and comprehensive calibration analysis.
+- **Phase 4: Differential Privacy Integration:** Clipped/noisy training hooks, epsilon sensitivity studies, privacy-budget plots, and final posterior/performance artefacts. Completes the full privacy-preserving Bayesian RL pipeline.
 
 ---
 
@@ -110,7 +110,7 @@ The implementation demonstrates deterministic seed-based execution and high-fide
 
 ---
 
-### ?럳 Capstone Project ??Optimising Contextual Sentence Prediction Models for AI-Assisted Authoring Tools ([Episod](https://episod.ink/))
+## Capstone Project: Optimising Contextual Sentence Prediction Models for AI-Assisted Authoring Tools ([Episod](https://episod.ink/))
 
 > **Status:** Completed | **Role:** Evaluation Model Team Member (2 of 4) | **Repo:** Private industrial repository; code not publicly available due to intellectual property constraints.
 
@@ -122,11 +122,11 @@ A university capstone initiative conducted in collaboration with [Episod](https:
 - Generated and analysed **110 empirical test cases** (20 per book across 11 books) to validate model consistency, identify scoring sensitivity thresholds, and surface systematic failure modes.
 - Collaborated on improving **prompt efficiency** and developing structured feedback extraction mechanisms to support continuous refinement of the deployed prediction system.
 
-> ?뵏 **Intellectual Property Notice:** The source code, internal evaluation benchmarks, and proprietary datasets associated with this engagement are not publicly available. All implementation details remain within a private industrial repository in accordance with intellectual property constraints.
+> **Intellectual Property Notice:** The source code, internal evaluation benchmarks, and proprietary datasets associated with this engagement are not publicly available. All implementation details remain within a private industrial repository in accordance with intellectual property constraints.
 
 ---
 
-## ?렞 Current Focus
+## Current Focus
 
 Rather than mere implementation, my current focus is directed towards interrogating fundamental academic questions:
 
@@ -136,7 +136,7 @@ Rather than mere implementation, my current focus is directed towards interrogat
 
 ---
 
-## ?벉 Contact Information
+## Contact Information
 
 I welcome discourse with fellow researchers and practitioners regarding potential collaborations or theoretical discussions.
 
